@@ -1,0 +1,21 @@
+{
+  "name": "travel-toolkit",
+  "displayName": "Travel Toolkit",
+  "version": "0.1.0",
+  "description": "Evidence-based travel planning, route verification, trip companion content, and optional notifications.",
+  "author": {
+    "name": "Ryan-HuangRui",
+    "url": "https://github.com/Ryan-HuangRui"
+  },
+  "homepage": "https://github.com/Ryan-HuangRui/travel-toolkit",
+  "repository": "https://github.com/Ryan-HuangRui/travel-toolkit",
+  "license": "Apache-2.0",
+  "keywords": [
+    "travel",
+    "planning",
+    "routing",
+    "trip-companion",
+    "productivity"
+  ],
+  "skills": "./skills/"
+}
