@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "description": "Evidence-based travel planning, routing, companion content, and optional notifications.",
   "author": {
-    "name": "Travel Toolkit contributors"
+    "name": "Ryan-HuangRui"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Travel Toolkit",
     "shortDescription": "Plan, verify, and accompany a trip.",
     "longDescription": "A Travel Plan Bundle workflow with provider-aware routing and optional notifications.",
-    "developerName": "Travel Toolkit contributors",
+    "developerName": "Ryan-HuangRui",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": "Plan a trip, verify its routes, or prepare a Trip Buddy programme."
