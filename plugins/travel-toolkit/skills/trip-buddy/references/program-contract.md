@@ -2,10 +2,10 @@
 
 ## Location and ownership
 
-For a Travel Plan Bundle at `travel/`, keep the companion state under `travel/buddy/`:
+For a Travel Plan Bundle at `<bundle>/`, keep the companion state under `<bundle>/buddy/`:
 
 ```text
-travel/
+<bundle>/
 ├── trip.json                 # canonical itinerary facts
 └── buddy/
     ├── program.json          # canonical Buddy queue and delivery state
