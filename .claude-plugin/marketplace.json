@@ -3,8 +3,10 @@
   "owner": {
     "name": "Ryan-HuangRui"
   },
-  "description": "Open-source agent-native travel planning and trip companion toolkit.",
-  "version": "0.1.0",
+  "metadata": {
+    "description": "Open-source agent-native travel planning and trip companion toolkit.",
+    "version": "0.1.0"
+  },
   "plugins": [
     {
       "name": "travel-toolkit",
