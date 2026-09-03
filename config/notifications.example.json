@@ -1,0 +1,10 @@
+{
+  "schema": "travel-notify-profiles/v1",
+  "profiles": {
+    "trip-updates": {
+      "channel": "feishu-cli",
+      "identity": "bot",
+      "chat_id": "replace-locally-never-commit"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "revision": 0,
+  "updated_at": "2026-09-03T07:36:56Z",
+  "trip": {
+    "id": "synthetic-city-break",
+    "title": "Synthetic City Break",
+    "planning_phase": "exploration",
+    "start_date": "2027-05-01",
+    "end_date": "2027-05-04",
+    "date_flexibility": {
+      "status": "tentative",
+      "days_before": 3,
+      "days_after": 3
+    },
+    "timezone": "Europe/Paris",
+    "language": "zh-CN",
+    "currency": "EUR"
+  },
+  "constraints": [],
+  "places": [],
+  "decisions": [],
+  "days": [],
+  "reservations": [],
+  "candidates": [],
+  "tasks": [],
+  "budget": [],
+  "sources": []
+}

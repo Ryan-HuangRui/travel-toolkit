@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Travel Guide"
+  short_description: "Explore trip options, then build a detailed plan."
+  default_prompt: "Use $plan-travel-guide to first explore event-informed trip skeletons, then build a validated detailed plan only after I accept the route and dates."

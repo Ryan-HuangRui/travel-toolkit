@@ -1,0 +1,15 @@
+{
+  "schema": "trip-buddy-notification/v1",
+  "id": "sample-trip:culture:2026-09-04",
+  "kind": "culture",
+  "recipient_profile": "trip-updates",
+  "delivery_mode": "scheduled",
+  "state": "sending",
+  "authorized": true,
+  "idempotency_key": "trip-buddy:sample-trip:culture:2026-09-04",
+  "content": {
+    "title": "D-22 | 一座城市从河中长出来",
+    "body": "今日文化卡已准备好。",
+    "artifact_url": "https://example.invalid/culture-card"
+  }
+}

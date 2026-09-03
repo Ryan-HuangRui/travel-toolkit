@@ -1,0 +1,4 @@
+interface:
+  display_name: "Travel Maps Planner"
+  short_description: "Plan travel routes with Google Maps data"
+  default_prompt: "Plan a travel itinerary with mapped places and routes."

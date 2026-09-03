@@ -1,0 +1,3 @@
+interface:
+  display_name: "Travel Disruption Watch"
+  short_description: "Verify and classify material trip disruptions"
