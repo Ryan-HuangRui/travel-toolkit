@@ -11,10 +11,10 @@ Read [the program contract](references/program-contract.md) before creating or c
 
 ## Inputs and boundaries
 
-1. Read the owning project's `AGENTS.md`, then `travel/trip.json`. Use `plan-travel-guide` for itinerary creation, revisions, or validation.
-2. A Buddy program lives at `travel/buddy/program.json` and records content intent, cadence, delivery policy, item state, source freshness, and idempotency state. It must reference the trip bundle; it must not duplicate itinerary facts.
+1. Read project-level agent instructions when present, then resolve the active Travel Plan Bundle from the user's explicit path or workspace context. If `plan-travel-guide` created the plan without a custom location, look under `travel-plans/<trip-id>/`. Read `<bundle>/trip.json`; do not assume a repository-specific path.
+2. A Buddy program lives at `<bundle>/buddy/program.json` and records content intent, cadence, delivery policy, item state, source freshness, and idempotency state. It must reference the trip bundle; it must not duplicate itinerary facts.
 3. For culture, plan a bounded editorial pool rather than pre-writing a dispatch queue. Record topic quotas, ordered candidate stories, and the history of what the traveller has actually seen. On each eligible day, select the best story from the latest `trip.json`, remaining culture slots, per-topic quota, and recent delivery history; only then research and generate its artifact.
-4. An older project without `travel/trip.json` may be inspected only through a read-only legacy adapter. Do not migrate it, attach a schedule, or send messages until the user explicitly adopts a Travel Plan Bundle.
+4. An older project without a Travel Plan Bundle may be inspected only through a read-only legacy adapter. Do not migrate it, attach a schedule, or send messages until the user explicitly adopts a Travel Plan Bundle.
 5. Keep group/chat IDs, credentials, and private addresses outside Git. Resolve delivery profiles only through a host-private notification adapter configuration.
 6. Child Skills never send messages. The orchestrator may issue a platform-neutral notification request only after the user has approved the recipient, sending identity, content shape, cadence, and delivery mode. Use `travel-notify` and the selected delivery adapter for actual delivery.
 
@@ -65,9 +65,10 @@ The pre-departure sender may use the traveller's current location only when the 
 
 ## Validation
 
+From the `trip-buddy` skill directory, run:
+
 ```bash
-python3 .codex/skills/trip-buddy/scripts/validate_program.py \
-  projects/<domain>/<trip>/travel/buddy/program.json
+python3 scripts/validate_program.py PATH/TO/BUNDLE/buddy/program.json
 ```
 
 Run the Travel Plan Bundle validator after any confirmed itinerary update. Validate the Buddy program separately after its own changes.
