@@ -2,6 +2,8 @@
 
 An open-source Codex plugin for planning a trip, verifying day-to-day logistics, and supporting travellers before and during the journey.
 
+[中文说明](README.zh-CN.md)
+
 ## Workflow
 
 ```text
