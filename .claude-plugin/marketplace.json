@@ -1,0 +1,30 @@
+{
+  "name": "travel-toolkit",
+  "owner": {
+    "name": "Ryan-HuangRui"
+  },
+  "description": "Open-source agent-native travel planning and trip companion toolkit.",
+  "version": "0.1.0",
+  "plugins": [
+    {
+      "name": "travel-toolkit",
+      "source": "./plugins/travel-toolkit",
+      "description": "Plan trips, verify routes, prepare daily briefs, and coordinate optional travel notifications.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Ryan-HuangRui"
+      },
+      "homepage": "https://github.com/Ryan-HuangRui/travel-toolkit",
+      "repository": "https://github.com/Ryan-HuangRui/travel-toolkit",
+      "license": "Apache-2.0",
+      "category": "Productivity",
+      "tags": [
+        "travel",
+        "planning",
+        "routing",
+        "trip-companion",
+        "productivity"
+      ]
+    }
+  ]
+}
